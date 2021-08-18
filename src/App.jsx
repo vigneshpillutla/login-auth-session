@@ -1,4 +1,4 @@
-import './App.css';
+import './stylesheets/App.css';
 import 'antd/dist/antd.css';
 import routes from './routes/routes';
 import { RouteWithSubRoutes } from './common/index';
