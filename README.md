@@ -16,6 +16,8 @@ yarn install
 
 Change the serverDomain in `/config/dev.js` and in `/config/prod.js`
 
+Configure the request urls in `/apiCalls/user.js` to your backend endpoint.
+
 To start the server run this command
 
 ```
