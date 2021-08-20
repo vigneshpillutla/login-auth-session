@@ -11,6 +11,9 @@ const useProvideAuth = () => {
       }
     });
   };
+  const googleSignIn = () => {
+    UserAuth.googleSignIn();
+  };
   const getUser = () => {
     UserAuth.getUser((res) => {
       if (res.success) {
@@ -40,6 +43,7 @@ const useProvideAuth = () => {
     signUp,
     logout,
     getUser,
+    googleSignIn,
   };
 };
 

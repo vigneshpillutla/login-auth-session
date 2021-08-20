@@ -4,8 +4,12 @@ import { displayMsg } from 'common';
 import { axiosCng } from 'common';
 const serverPath = keys.serverDomain;
 const authUrl = `${serverPath}/api/auth`;
+const socialAuth = `${serverPath}/api/oauth`;
 
 // Cache-Control header to be implemented with axios interceptor.
+const googleSignIn = () => {
+  window.open(`${socialAuth}/google`, '_self');
+};
 const login = async (email, password, done) => {
   const response = await axios.post(
     `${authUrl}/login`,
@@ -65,6 +69,7 @@ const UserAuth = {
   logout,
   signUp,
   getUser,
+  googleSignIn,
 };
 
 export default UserAuth;

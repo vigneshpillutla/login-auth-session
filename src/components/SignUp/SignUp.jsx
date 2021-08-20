@@ -27,6 +27,9 @@ const SignUpPage = () => {
       history.replace('/');
     });
   };
+  const handleGoogle = () => {
+    auth.googleSignIn();
+  };
   return (
     <div>
       <form>
@@ -60,6 +63,7 @@ const SignUpPage = () => {
         />
         <button onClick={onSignUp}>Sign Up</button>
       </form>
+      <button onClick={handleGoogle}>Sign in with google</button>
     </div>
   );
 };
